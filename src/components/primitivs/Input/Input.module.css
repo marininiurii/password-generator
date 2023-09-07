@@ -1,0 +1,10 @@
+.input {
+  display: flex;
+  width: 290px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+.inputText {
+  width: 50px;
+}

@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: darkgray;
+}
+.header {
+  padding-right: 10px;
+  font-size: 35px;
+  font-family: 'Roboto Mono', sans-serif;
+}
+.imgLockIcon {
+  position: relative;
+  top: -5px;
+}

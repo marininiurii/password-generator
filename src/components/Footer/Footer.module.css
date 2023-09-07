@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: darkgray;
+}
+.lable {
+  font-size: 15px;
+  font-family: 'Roboto Mono', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: pink;
+}
+a:hover {
+  color: #489dff;
+}
