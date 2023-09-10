@@ -39,16 +39,7 @@ export const passwordGenerator = (
   if (includeSymbols) collCharsForPassworg = collCharsForPassworg.concat(SYMBOLS);
   const passwordLength = collCharsForPassworg.length;
   const arrayForPassword = new Array(Number(numberOfSymbols)).fill(0);
-  let countChars = 0;
-  const password = arrayForPassword.reduce((acc) => {
-    if (countChars === Number(numberOfInterval)) {
-      acc += '-';
-      countChars = 0;
-      return acc;
-    }
-    countChars += 1;
-    acc += collCharsForPassworg[getRandomNumber(passwordLength)];
-    return acc;
-  }, '');
-  return password.endsWith('-') ? password.slice(0, password.length - 1) : password;
+  const password = arrayForPassword.reduce((acc) => (acc += collCharsForPassworg[getRandomNumber(passwordLength)]), '');
+  return password.match(new RegExp('.{1,' + numberOfInterval + '}', 'g')).join('-');
+  // Регулярное выражение метода match для разделения строки на заданное количество символов
 };
