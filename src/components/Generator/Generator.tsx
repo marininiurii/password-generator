@@ -57,11 +57,13 @@ export const Generator: React.FC = () => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <Input
+          className={styles.input}
           label="Number of symbols:"
           value={generatorSetings.numberOfSymbols}
           onChange={handleChangeNumberOfSymbols}
         />
         <Input
+          className={styles.input}
           label="Separator interval:"
           value={generatorSetings.numberOfInterval}
           onChange={handleChangeNumberOfInterval}

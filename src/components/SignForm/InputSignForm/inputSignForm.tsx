@@ -1,11 +1,11 @@
-import styles from './Input.module.css';
+import styles from './inputSignForm.module.css';
 import React from 'react';
 
 type Props = { className?: string; label: string; value: string; onChange: (newValue: string) => void };
 
-export const Input: React.FC<Props> = ({ className, label, value, onChange }) => {
+export const InputSignForm: React.FC<Props> = ({ className, label, value, onChange }) => {
   return (
-    <div className={styles.input}>
+    <div className={styles.inputSign}>
       <label className={styles.inputLabel}>{label}</label>
       <input
         type="text"

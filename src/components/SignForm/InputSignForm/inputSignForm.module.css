@@ -1,0 +1,14 @@
+.inputSign {
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  flex-direction: column;
+  align-content: flex-start;
+  font-size: 25px;
+  padding: 20px 0 10px 20px;
+}
+
+.inputLabel {
+  font-size: 15px;
+  padding-bottom: 10px;
+}

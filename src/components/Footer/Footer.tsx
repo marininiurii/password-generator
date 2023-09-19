@@ -5,7 +5,10 @@ export const Footer: React.FC = () => {
   return (
     <div className={styles.wrapper}>
       <span className={styles.lable}>
-        Created by <a href="https://github.com/marininiurii">Marinin Iurii</a>
+        Created by{' '}
+        <a className={styles.myName} href="https://github.com/marininiurii">
+          Marinin Iurii
+        </a>
       </span>
     </div>
   );
