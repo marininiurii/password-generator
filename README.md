@@ -1,7 +1,5 @@
 ### Tests status:
 
-changes
-
 [![Maintainability](https://api.codeclimate.com/v1/badges/130e41968143ab1a3d48/maintainability)](https://codeclimate.com/github/marininiurii/Password-Generator/maintainability)
 
 ### Password Generator
