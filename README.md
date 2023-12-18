@@ -7,6 +7,10 @@
 It is a small web app for generating strong passwords. It includes five user options: Choose the length of the password, choose the interval to delimit the password with '-' character, you can also add upper case numbers and symbols.
 App created using tech React + TypeScript + Vite
 
+## direct link
+
+[password-generator](https://react-pass-gen.web.app/)
+
 ## installation
 
 - Сlone the project
