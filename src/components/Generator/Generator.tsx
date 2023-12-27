@@ -4,6 +4,7 @@ import { Checkbox } from '../primitivs/Checkbox/Checkbox';
 import { Input } from '../primitivs/Input/Input';
 import { Button } from '../primitivs/Button/Button';
 import { passwordGenerator } from './generator';
+import { useTranslation } from 'react-i18next';
 
 type GeneratorSettings = {
   includeUppercase: boolean;
@@ -22,6 +23,7 @@ const defaultSettings: GeneratorSettings = {
 };
 
 export const Generator: React.FC = () => {
+  const { t } = useTranslation();
   const [password, setPassword] = useState<string>();
   const [generatorSetings, setGeneratorSetings] = useState<GeneratorSettings>(defaultSettings);
   const handleChangeNumberOfSymbols = (newValue: string) => {
@@ -58,26 +60,26 @@ export const Generator: React.FC = () => {
       <div className={styles.container}>
         <Input
           className={styles.input}
-          label="Number of symbols:"
+          label={t('main.numberOfSymbols')}
           value={generatorSetings.numberOfSymbols}
           onChange={handleChangeNumberOfSymbols}
         />
         <Input
           className={styles.input}
-          label="Separator interval:"
+          label={t('main.separatorInterval')}
           value={generatorSetings.numberOfInterval}
           onChange={handleChangeNumberOfInterval}
         />
-        <Checkbox label="Uppercase" value={generatorSetings.includeUppercase} onChange={handleSetUppercase} />
-        <Checkbox label="Number" value={generatorSetings.includeNumbers} onChange={handleSetNumbers} />
-        <Checkbox label="Symbols" value={generatorSetings.includeSymbols} onChange={handleSetSymbols} />
+        <Checkbox label={t('main.uppercase')} value={generatorSetings.includeUppercase} onChange={handleSetUppercase} />
+        <Checkbox label={t('main.numbers')} value={generatorSetings.includeNumbers} onChange={handleSetNumbers} />
+        <Checkbox label={t('main.symbols')} value={generatorSetings.includeSymbols} onChange={handleSetSymbols} />
       </div>
       <div className={styles.buttonsContainer}>
-        <Button onClick={handleGeneratePassword}>Generate Password</Button>
-        <p className={styles.inputPassword} id="password">
-          {password}
-        </p>
-        <Button onClick={handleCopyPassword}>Copy</Button>
+        <Button onClick={handleGeneratePassword}>{t('main.generate')}</Button>
+        <div className={styles.inputPassword}>
+          <p id="password">{password}</p>
+        </div>
+        <Button onClick={handleCopyPassword}>{t('main.copy')}</Button>
       </div>
     </div>
   );

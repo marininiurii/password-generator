@@ -4,6 +4,7 @@ import { Generator } from './components/Generator/Generator.tsx';
 import { Header } from './components/Header/Header';
 import { SignForm } from './components/SignForm/SignForm.tsx';
 import { Routes, Route } from 'react-router-dom';
+import { Suspense } from 'react';
 
 function App() {
   return (
@@ -18,4 +19,10 @@ function App() {
   );
 }
 
-export default App;
+export default function WrappedApp() {
+  return (
+    <Suspense fallback="...loading">
+      <App />
+    </Suspense>
+  );
+}

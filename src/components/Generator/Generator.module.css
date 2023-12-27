@@ -1,7 +1,5 @@
-@font-face {
-  font-family: 'Roboto Mono';
-  src: url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-}
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -9,17 +7,17 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: 'Varela Round', sans-serif;
 }
 .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 300px;
+  width: 600px;
   height: 200px;
+  padding-top: 25px;
 }
-
 .buttonsContainer {
   display: flex;
   flex-direction: column;
@@ -27,29 +25,15 @@
   align-items: center;
   width: 500px;
   height: 200px;
-}
-
-.buttonGenerator,
-.buttonCopy {
-  color: white;
-  height: 48px;
-  padding: 10px 15px;
-  border-radius: 7px;
-  background: #489dff;
-  transition: background-color 0.3s ease;
-  font-family: 'Roboto Mono', sans-serif;
-}
-.buttonGenerator:hover,
-.buttonCopy:hover {
-  background-color: rgb(129, 212, 240);
-}
-.buttonGenerator:active,
-.buttonCopy:active {
-  background-color: rgb(91, 223, 91);
+  margin: 40px 0 0 180px;
 }
 .inputPassword {
   font-size: 30px;
+  position: relative;
+  bottom: 35px;
+  right: 90px;
 }
 .input {
-  width: 50px;
+  width: 30px;
+  color: rgb(22, 20, 20);
 }

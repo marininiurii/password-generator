@@ -1,33 +1,43 @@
-@font-face {
-  font-family: 'Roboto Mono';
-  src: url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-}
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
 .wrapper {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 150px;
-  background-color: darkgray;
+  background-color: rgb(206, 150, 150);
+}
+.switch {
+  position: absolute;
+  left: 50px;
+  top: 50px;
 }
 .header {
   padding-right: 10px;
   font-size: 35px;
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+  color: #e8e8e8;
 }
 .imgLockIcon {
   position: relative;
   top: -5px;
 }
+.language {
+  position: absolute;
+  left: 50px;
+  top: 30px;
+}
 .login {
   position: absolute;
   right: 50px;
   top: 30px;
+  color: #e8e8e8;
 }
 a {
   text-decoration: none;
-  color: antiquewhite;
+  color: #e8e8e8;
 }
 a:hover {
-  color: #489dff;
+  color: rgb(131, 186, 220);
 }

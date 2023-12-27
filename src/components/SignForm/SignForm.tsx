@@ -12,7 +12,7 @@ export const SignForm: React.FC = () => {
           <InputSignForm className={styles.input} label="Password:" value={''} onChange={() => {}} />
         </div>
         <div className={styles.buttonContainer}>
-          <Button onClick={() => {}}>Sign Up</Button>
+          <Button onClick={() => {}}>Sign</Button>
           <Button onClick={() => {}}>Login</Button>
         </div>
       </div>
