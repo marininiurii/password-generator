@@ -1,0 +1,15 @@
+{
+  "main": {
+    "header": "Генератор Паролей",
+    "login": "Войти",
+    "home": "Главная",
+    "numberOfSymbols": "Сколько символов:",
+    "separatorInterval": "Разделитель:",
+    "uppercase": "Верхний регистр",
+    "numbers": "Числа",
+    "symbols": "Символы",
+    "generate": "Генерировать",
+    "copy": "Скопировать",
+    "created": "Придумал"
+  }
+}

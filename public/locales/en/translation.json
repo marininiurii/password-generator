@@ -1,0 +1,15 @@
+{
+  "main": {
+    "header": "Password Generator",
+    "login": "Login",
+    "home": "Home",
+    "numberOfSymbols": "Number of symbols:",
+    "separatorInterval": "Separator Interval",
+    "uppercase": "Uppercase",
+    "numbers": "Numbers",
+    "symbols": "Symbols",
+    "generate": "Generate",
+    "copy": "Copy",
+    "created": "Created by"
+  }
+}
