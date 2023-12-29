@@ -9,7 +9,7 @@ App created using tech React + TypeScript + Vite
 
 ## web version
 
-[password-generator](/password-generator-sigma-ruby.vercel.app/)
+[password-generator](https://password-generator-sigma-ruby.vercel.app/)
 
 ## installation
 
