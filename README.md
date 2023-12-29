@@ -4,12 +4,12 @@
 
 ### Password Generator
 
-It is a small web app for generating strong passwords. It includes five user options: Choose the length of the password, choose the interval to delimit the password with '-' character, you can also add upper case numbers and symbols.
+It is web app for generating strong passwords. It includes five user options: Choose the length of the password, choose the interval to delimit the password with '-' character, you can also add upper case numbers and symbols.
 App created using tech React + TypeScript + Vite
 
-## direct link
+## web version
 
-[password-generator](https://react-pass-gen.web.app/)
+[password-generator](password-generator-sigma-ruby.vercel.app)
 
 ## installation
 
